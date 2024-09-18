@@ -1,7 +1,7 @@
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:pizza_app_bloc_firebase/screens/auth/view/sign_in_screen.dart';
+import 'package:pizza_app_bloc_firebase/screens/auth/view/sign_up_screen.dart';
 
 class WelcomeScreen extends StatefulWidget {
   const WelcomeScreen({super.key});
@@ -92,25 +92,15 @@ class _WelcomeScreenState extends State<WelcomeScreen> with SingleTickerProvider
                         ],
                       ),
                     ),
-                    // Expanded(
-                    //     child: TabBarView(
-                    //       controller: tabController,
-                    //       children: [
-                    //         BlocProvider<SignInBloc>(
-                    //           create: (context) => SignInBloc(
-                    //               context.read<AuthenticationBloc>().userRepository
-                    //           ),
-                    //           child: const SignInScreen(),
-                    //         ),
-                    //         BlocProvider<SignUpBloc>(
-                    //           create: (context) => SignUpBloc(
-                    //               context.read<AuthenticationBloc>().userRepository
-                    //           ),
-                    //           child: const SignUpScreen(),
-                    //         ),
-                    //       ],
-                    //     )
-                    // )
+                    Expanded(
+                        child: TabBarView(
+                          controller: tabController,
+                          children: const [
+                            SignInScreen(),
+                             SingUpScreen(),
+                          ],
+                        )
+                    )
                   ],
                 ),
               ),

@@ -11,12 +11,12 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.6
-#  equatable:
-#  firebase_auth:
-#  firebase_storage:
-#  cloud_firestore:
-#  rxdart:
-#  path:
+  equatable:
+  firebase_auth:
+  firebase_storage:
+  cloud_firestore:
+  rxdart:
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

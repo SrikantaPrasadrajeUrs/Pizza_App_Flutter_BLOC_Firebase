@@ -13,11 +13,13 @@ dependencies:
   cupertino_icons: ^1.0.6
   bloc:
   flutter_bloc:
-  equatable:
+
 
   user_repository:
     path: packages/user_repository
   firebase_core: ^2.31.0
+  pizza_repository:
+    path: packages/pizza_repository
 
 dev_dependencies:
   flutter_test:
